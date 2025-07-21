@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Liver Cirrhosis Prediction Form</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 40px;
+    }
+    h2 {
+      color: darkgreen;
+    }
+    form {
+      max-width: 700px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+    input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    input[type="submit"] {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: green;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Liver Cirrhosis Prediction Form</h2>
+
+  <form action="/predict" method="post">
+    <label>Age:</label>
+    <input type="number" name="Age" required>
+
+    <label>Duration of Alcohol Consumption (years):</label>
+    <input type="number" name="Durationofalcoholconsumptionyears" required>
+
+    <label>Quantity of Alcohol Consumption (quarters/day):</label>
+    <input type="number" name="Quantityofalcoholconsumptionquartersday" required>
+
+    <label>Hemoglobin (g/dl):</label>
+    <input type="number" step="any" name="Hemoglobingdl" required>
+
+    <label>PCV:</label>
+    <input type="number" step="any" name="PCV" required>
+
+    <label>MCV (femtoliters/cell):</label>
+    <input type="number" step="any" name="MCVfemtoliterscell" required>
+
+    <label>Total Count:</label>
+    <input type="number" step="any" name="TotalCount" required>
+
+    <label>Polymorphs:</label>
+    <input type="number" step="any" name="Polymorphs" required>
+
+    <label>Lymphocytes:</label>
+    <input type="number" step="any" name="Lymphocytes" required>
+
+    <label>Monocytes:</label>
+    <input type="number" step="any" name="Monocytes" required>
+
+    <label>Eosinophils:</label>
+    <input type="number" step="any" name="Eosinophils" required>
+
+    <label>Basophils:</label>
+    <input type="number" step="any" name="Basophils" required>
+
+    <label>Platelet Count (lakhs/mm³):</label>
+    <input type="number" step="any" name="PlateletCountlakhsmm" required>
+
+    <label>Direct Bilirubin (mg/dl):</label>
+    <input type="number" step="any" name="Directmgdl" required>
+
+    <label>Indirect Bilirubin (mg/dl):</label>
+    <input type="number" step="any" name="Indirectmgdl" required>
+
+    <label>Total Protein (g/dl):</label>
+    <input type="number" step="any" name="TotalProteingdl" required>
+
+    <label>Albumin (g/dl):</label>
+    <input type="number" step="any" name="Albumingdl" required>
+
+    <label>Globulin (g/dl):</label>
+    <input type="number" step="any" name="Globulingdl" required>
+
+    <label>AL Phosphatase (U/L):</label>
+    <input type="number" step="any" name="ALPhosphataseUL" required>
+
+    <label>SGOT/AST (U/L):</label>
+    <input type="number" name="SGOTASTUL" required>
+
+    <label>SGPT/ALT (U/L):</label>
+    <input type="number" name="SGPTALTUL" required>
+
+    <input type="submit" value="Predict">
+  </form>
+
+</body>
+</html>
